@@ -1,6 +1,6 @@
 ## A regular expressions library implemented from scratch in C++
 
-    This regular expressions library is better implementation of the regular expressions engine I made a year ago and have more features. I will be making an article about how I made this library. Also it needs more testing
+ This regular expressions library is better implementation of the regular expressions engine I made a year ago and have more features. I will be making an article about how I made this library. Also it needs more testing
 
 ## Features :
 
@@ -26,14 +26,14 @@ The grammar I used for parsing is :
 - terminals = {|, +, *, ?, ^, {, }, [, ], (, ), digit, char}
 - productions set :
 {
-    expr -> expr_wo_pipe|expr
-    expr_wo_pipe -> expr_wo_concat expr_wo_pipe
-    expr_wo_concat -> alpha | alpha opr_expr
-    opr_expr -> unary_opr | unary_opr opr_expr
-    unary_opr -> + | ? | * | {num} | {num,num}
-    alpha -> p_expr | char | [char_set] | [^char_set]
-    p_expr -> (expr)
-    char_set -> char | char char_set
+    expr -> expr_wo_pipe|expr,
+    expr_wo_pipe -> expr_wo_concat expr_wo_pipe,
+    expr_wo_concat -> alpha | alpha opr_expr,
+    opr_expr -> unary_opr | unary_opr opr_expr,
+    unary_opr -> + | ? | * | {num} | {num,num},
+    alpha -> p_expr | char | [char_set] | [^char_set],
+    p_expr -> (expr),
+    char_set -> char | char char_set,
     num -> digit | digit num
 }
 
