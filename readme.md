@@ -1,6 +1,6 @@
 ## A regular expressions library implemented from scratch in C++
 
- This regular expressions library is better implementation of the regular expressions engine I made a year ago and have more features. I will be making an article about how I made this library. Also it needs more testing.
+ This regular expressions library is better implementation of the regular expressions engine I made a year ago and have more features.
  This repository is built to help me in making a compiler from scratch while I'm learning compilation techniques in this semestre's class.
 
 ## Features :
