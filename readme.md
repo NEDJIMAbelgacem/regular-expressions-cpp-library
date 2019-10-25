@@ -6,7 +6,7 @@
 ## Features :
 
 Supported operators :
-- concatentation operator like "ab".
+- concatenation operator like "ab".
 - union operator like "a|b".
 - 0 or more repetitions operator '*'.
 - 1 or more repetitions operator '+'.
